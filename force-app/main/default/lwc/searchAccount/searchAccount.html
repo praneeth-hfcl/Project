@@ -1,0 +1,13 @@
+<template>
+        <lightning-card title="Search Account" icon-name="custom:custom15">
+            <div class="slds-var-m-around_medium">
+              <lightning-input label="Account Name" name="name" value={account.name} onchange={handleChange}></lightning-input>
+              <lightning-input label="Account Phone" name="phone" value={account.phone} onchange={handleChange}></lightning-input>
+              <lightning-input label="Billing State" name="state" value={account.state} onchange={handleChange}></lightning-input>
+              <lightning-input label="Billing City" name="city" value={account.city} onchange={handleChange}></lightning-input>
+              <lightning-input label="Billing Street" name="street" value={account.street} onchange={handleChange}></lightning-input>
+              <lightning-input label="Billing Zipcode" name="zipcode" value={account.zipcode} onchange={handleChange}></lightning-input>
+              <lightning-button variant="brand" label="Search" onclick={searchAccount}></lightning-button>
+            </div>
+          </lightning-card>  
+</template>
